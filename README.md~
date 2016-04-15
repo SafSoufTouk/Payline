@@ -9,4 +9,4 @@ Authors
 Installation
 ------------
 
-### Download the bundle using composer
+### Add the bundle to composer.json:

@@ -2,7 +2,6 @@
     "name": "pxcore/payline",
     "description": "Symfony integration for Payline payment system",
     "keywords": ["payline","payment","payment system"],
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -15,8 +14,6 @@
         "ext-soap": "*"
     },
     "autoload": {
-        "psr-0": {
-            "Payline": "payline/lib/Payline/src/Payline/"
-        }
+        "psr-4": { "pxCore\\pxCorePaylineBundle": "" }
     }
 }

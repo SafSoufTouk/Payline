@@ -1,0 +1,3 @@
+px_core_payline_homepage:
+    path:     /
+    defaults: { _controller: pxCorePaylineBundle:Default:index }

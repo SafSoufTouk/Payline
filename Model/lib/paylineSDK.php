@@ -3,6 +3,8 @@
 // OBJECTS DEFINITIONS
 //
 
+namespace pxCore\PaylineBundle\Model\lib;
+
 class paylineUtil{
 
 	/**

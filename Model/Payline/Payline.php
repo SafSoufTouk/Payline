@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../lib/paylineSDK.php';
+namespace pxCore\PaylineBundle\Model\Payline;
+
+use pxCore\PaylineBundle\Model\lib\paylineSDK;
 
 class Payline extends paylineSDK {
 

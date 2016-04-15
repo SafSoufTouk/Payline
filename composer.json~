@@ -1,38 +1,22 @@
 {
-    "name": "phpoffice/phpexcel",
-    "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
-    "keywords": ["PHP","Excel","OpenXML","xlsx","xls","spreadsheet"],
-    "homepage": "http://phpexcel.codeplex.com",
+    "name": "pxcore/payline",
+    "description": "Symfony integration for Payline payment system",
+    "keywords": ["payline","payment","payment system"],
     "type": "library",
-    "license": "LGPL",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Maarten Balliauw",
-            "homepage": "http://blog.maartenballiauw.be"
-        },
-        {
-            "name": "Mark Baker"
-        },
-        {
-            "name": "Franck Lefevre",
-            "homepage": "http://blog.rootslabs.net"
-        },
-        {
-            "name": "Erik Tilt"
+            "name": "Safwen Toukabri",
+            "email": "safwen.toukabri@proxym-it.com"
         }
     ],
     "require": {
         "php": ">=5.2.0",
-        "ext-xml": "*",
-        "ext-xmlwriter": "*"
-    },
-    "recommend": {
-        "ext-zip": "*",
-        "ext-gd2": "*"
+        "ext-soap": "*"
     },
     "autoload": {
         "psr-0": {
-            "PHPExcel": "Classes/"
+            "Payline": "payline/lib/Payline/src/Payline/"
         }
     }
 }
