@@ -14,6 +14,6 @@
         "ext-soap": "*"
     },
     "autoload": {
-        "psr-4": { "pxCore\\pxCorePaylineBundle": "" }
+        "psr-4": { "pxCore\\PaylineBundle\\": "" }
     }
 }
