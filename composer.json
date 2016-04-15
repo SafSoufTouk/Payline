@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Payline_Payline": "payline/lib/Payline/src/Payline/"
+            "Payline": "payline/lib/Payline/src/Payline/"
         }
     }
 }
