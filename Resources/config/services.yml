@@ -1,32 +1,13 @@
 parameters:
     # Payline default config
-    payline_config.merchant_id: "23601506105667"
-    payline_config.access_key: "WldDKMK3iRHzL0ZPOuEU"
-    payline_config.access_key_ref: ""
+    payline_config.merchant_id: "XXXXXXXXXXXXXX"
+    payline_config.access_key: "XXXXXXXXXXXXXXXXXXXX"
     payline_config.proxy_host: ""
     payline_config.proxy_port: ""
     payline_config.proxy_login: ""
     payline_config.proxy_password: ""
     payline_config.environment: "HOMO"
-    # web services settings
-    payline_config.ws_version: "3"
-    payline_config.payment_currency: "978"
-    payline_config.order_currency: "978"
-    payline_config.security_mode: ""
-    payline_config.language_code: ""
-    payline_config.payment_actions.authorisation: "100"
-    payline_config.payment_actions.authorisation_and_validation: "101"
-    payline_config.payment_actions.validation: "201"
-    payline_config.payment_mode: "CPT"
-    payline_config.cancel_url: "http://reseauxjobs.dev.com/app_dev.php/company/home"
-    payline_config.notification_url: "http://reseauxjobs.dev.com/app_dev.php/company/home"
-    payline_config.return_url: "http://reseauxjobs.dev.com/app_dev.php/company/home"
-    payline_config.custom_payment_template_url: ""
-    payline_config.custom_payment_page_code: ""
-    payline_config.contract_number: "1234567"
-    payline_config.contract_number_list: ""
-    payline_config.second_contract_number_list: ""
-    payline_config.log_path: /var/www/html/my_project/app/logs/testPayline.log
+    payline_config.log_path: /var/www/my_project/app/logs/testPayline.log
 
 services:
     px_core_payline.service:

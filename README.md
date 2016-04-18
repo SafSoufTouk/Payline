@@ -35,11 +35,31 @@ public function registerBundles()
 ### Configure payline parameters
 
 ```
-To DO
+parameters:
+    # Payline config
+    payline_config.merchant_id: "XXXXXXXXXXXXXX"
+    payline_config.access_key: "XXXXXXXXXXXXXXXXXXXX"
+    payline_config.proxy_host: ""
+    payline_config.proxy_port: ""
+    payline_config.proxy_login: ""
+    payline_config.proxy_password: ""
+    payline_config.environment: "HOMO"
+    payline_config.log_path: /var/www/my_project/app/logs/testPayline.log	# to edit
 ```
 
 Usage
 -----
 
-To Do
+```
+// Create a new instance of the php "paylineSDK"
+$payline=  $this->get('px_core_payline.service');
+```
+
+This class enables the creation of SOAP messages and other specific classes that handle requests and responses, and use the payline API features. For example: doWebPayment, getWebPaymentDetails. For more details:
+* [Payline-kit-php](https://support.payline.com/hc/fr/articles/200995867-Kit-d-int%C3%A9gration-PHP)
+
+Enjoy!
+
+
+
 
