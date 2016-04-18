@@ -52,7 +52,32 @@ Usage
 
 ```
 // Create a new instance of the php "paylineSDK"
-$payline=  $this->get('px_core_payline.service');
+$payline = $this->get('px_core_payline.service');
+
+// Just for example
+$payline->returnURL = $this->generateAbsoluteUrl('company_payment_payline_finish');
+$payline->notificationURL = $this->generateAbsoluteUrl('company_payment_payline_notification');
+$payline->cancelURL = $this->generateAbsoluteUrl('company_payment');
+
+// COMMAND REFERENCE (must be unique)
+$commandRef = 'ref-01102222-003';   // just for example
+//VERSION
+$array['version'] = "3";  // WS_VERSION
+// PAYMENT
+$totalToPay = 250;   // example: 250 €
+$array['payment']['amount'] = $totalToPay * 100;  // PAYMENT AMOUNT (Multiply by 100 because the value 100 = 1 €)
+        
+$array['payment']['currency'] = "978";  // CURRENCY (Euro)
+$array['payment']['action'] = "100";    // AUTORISATION (100), AUTHORISATION_AND_VALIDATION (101) and VALIDATION (201) 
+$array['payment']['mode'] = "CPT";  // PAYMENT_MODE (CPT: Cash payment)
+// ORDER
+$array['order']['ref'] = $commandRef;    // COMMAND REFERENCE
+$array['order']['amount'] = $totalToPay * 100;    // COMMAND AMOUNt (usually the same as the payment amount)
+$array['order']['currency'] = "978";  // CURRENCY (Euro)
+// CONTRACT NUMBER
+$array['payment']['contractNumber'] = "1234567";    // CONTRACT_NUMBER
+// EXECUTE PAYMENT
+$response = $payline->doWebPayment($array);
 ```
 
 This class enables the creation of SOAP messages and other specific classes that handle requests and responses, and use the payline API features. For example: doWebPayment, getWebPaymentDetails. For more details:

@@ -4,6 +4,8 @@
 //
 
 namespace pxCore\PaylineBundle\Model\lib;
+use SoapVar;
+use SoapClient;
 
 class paylineUtil{
 
