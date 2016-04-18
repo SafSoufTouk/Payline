@@ -75,7 +75,7 @@ $array['order']['ref'] = $commandRef;    // COMMAND REFERENCE
 $array['order']['amount'] = $totalToPay * 100;    // COMMAND AMOUNt (usually the same as the payment amount)
 $array['order']['currency'] = "978";  // CURRENCY (Euro)
 // CONTRACT NUMBER
-$array['payment']['contractNumber'] = "1234567";    // CONTRACT_NUMBER
+$array['payment']['contractNumber'] = "XXXXXXX";    // CONTRACT_NUMBER
 // EXECUTE PAYMENT
 $response = $payline->doWebPayment($array);
 ```
