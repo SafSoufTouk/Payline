@@ -80,7 +80,7 @@ $array['payment']['contractNumber'] = "XXXXXXX";    // CONTRACT_NUMBER
 $response = $payline->doWebPayment($array);
 ```
 
-This class enables the creation of SOAP messages and other specific classes that handle requests and responses, and use the payline API features. For example: doWebPayment, getWebPaymentDetails. For more details:
+The "paylineSDK" class enables the creation of SOAP messages and other specific classes that handle requests and responses, and use the payline API features. For example: doWebPayment, getWebPaymentDetails. For more details:
 * [Payline-kit-php](https://support.payline.com/hc/fr/articles/200995867-Kit-d-int%C3%A9gration-PHP)
 
 Enjoy!
